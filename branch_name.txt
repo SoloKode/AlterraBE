@@ -1,3 +1,7 @@
 Ini Branch Master
 Ini Branch Development
+<<<<<<< HEAD
 Ini Branch Feature A
+=======
+Ini Branch Feature B
+>>>>>>> featureB
