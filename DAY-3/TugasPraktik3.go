@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 )
 
 func TugasMergeArray() {
@@ -91,3 +92,43 @@ func TugasMunculSekali() {
 	fmt.Println(munculSekali("1122334455")) // []
 	fmt.Println(munculSekali("0872504"))    // [8 7 2 5 4]
 }
+
+func appearOnce(number string) []int {
+	mapResult := map[int]int{}
+	result := []int{}
+	for _, val := range number {
+		res, _ := strconv.Atoi(string(val))
+		mapResult[res]++
+	}
+	for k, v := range mapResult {
+		if v == 1 {
+			result = append(result, k)
+		}
+	}
+
+	return result
+}
+
+// func Dinamis(slice []string) map[string]int {
+// 	var n int
+// 	fmt.Scanln(&n)
+// 	slice := make([]string, n)
+// 	for i,_ := range slice {
+// 		fmt.Scanln(&slice[i])
+// 	}
+// }
+
+// func ArrayMergeMentor(sliceA,sliceB []string) []string {
+// 	result := []string{}
+// 	mapResult := make(map[string]bool)
+
+// 	result = append(sliceA,sliceB...)
+// 	for _, value := range sliceA {
+// 		_, isFound := mapResult[value]
+// 		if !isFound {
+// 			result = append(result,value)
+// 			mapResult[value] = true
+// 		}
+// 	}
+// 	return result
+// }
