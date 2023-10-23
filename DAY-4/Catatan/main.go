@@ -41,7 +41,7 @@ func Catatan2ErrorHandling() {
 	}()
 	fmt.Println("b")
 	panic("ada panic")
-	fmt.Println("c")
+	// fmt.Println("c")
 }
 
 // func CatatanErrorhandling() {
