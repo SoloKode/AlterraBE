@@ -1,3 +1,4 @@
 go 1.21.3
 
 use ./DAY-5/Catatan
+use ./DAY-6/Catatan
